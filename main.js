@@ -1,4 +1,4 @@
-import axios from "axios";
+const axios = require("axios");
 
 document.addEventListener("DOMContentLoaded", function () {
   // Отримуємо елементи форми та кнопки
