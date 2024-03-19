@@ -22,8 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
       email: emailValue,
       message: messageValue,
     };
-    axios
-      .post(form.getAttribute("action"), formData)
+    fetch("/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
       .then((response) => {
         // Перевіряємо, чи отримали ми відповідь від сервера
         if (response.status === 200) {

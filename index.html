@@ -183,7 +183,12 @@
           <h2 class="fs-500 fw-bold text-primary-100">Let’s Work Together!</h2>
           <div class="mg-40"></div>
           <div class="form bg-glass">
-            <form class="form-wrapper container" name="contact-form" netlify>
+            <form
+              class="form-wrapper container"
+              name="contact-form"
+              method="POST"
+              netlify
+            >
               <div class="container form-name">
                 <label for="name">Your name:</label>
                 <input type="text" name="name" id="name" required />
@@ -235,7 +240,6 @@
       </footer>
       <div class="mg-40"></div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
