@@ -1,5 +1,3 @@
-import axios from "axios";
-
 document.addEventListener("DOMContentLoaded", function () {
   // Отримуємо елементи форми та кнопки
   const form = document.querySelector("form[name='contact-form']");
