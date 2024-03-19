@@ -1,3 +1,5 @@
+import axios from "axios";
+
 document.addEventListener("DOMContentLoaded", function () {
   // Отримуємо елементи форми та кнопки
   const form = document.querySelector("form[name='contact-form']");
@@ -22,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
       email: emailValue,
       message: messageValue,
     };
-    // Виконуємо AJAX-запит за допомогою Axios
-    post(form.getAttribute("action"), formData)
+    axios
+      .post(form.getAttribute("action"), formData)
       .then((response) => {
         // Перевіряємо, чи отримали ми відповідь від сервера
         if (response.status === 200) {
