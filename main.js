@@ -22,10 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
       email: emailValue,
       message: messageValue,
     };
-
     // Виконуємо AJAX-запит за допомогою Axios
-    axios
-      .post(form.getAttribute("action"), formData)
+    post(form.getAttribute("action"), formData)
       .then((response) => {
         // Перевіряємо, чи отримали ми відповідь від сервера
         if (response.status === 200) {
