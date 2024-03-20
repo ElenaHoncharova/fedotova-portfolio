@@ -7,7 +7,7 @@ function sendEmail() {
   const bodyMessage = `Name: ${fullName.value}<br> Email: ${email.value}<br> Message: ${mess.value}`;
 
   Email.send({
-    SecureToken: "0abd1f52-cc53-4e4b-861a-2ec904659605",
+    SecureToken: "c5e1a814-e81f-4f59-88af-84b4bf59d14a",
     Username: "selena.honcharova@gmail.com",
     Password: "A22C0FA4A2D86FBED54EDCC099515504EDE8",
     To: "selena.honcharova@gmail.com",
