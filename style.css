@@ -393,3 +393,27 @@ textarea {
   border-radius: 50px;
   justify-self: center;
 }
+@media (max-width: 50em) {
+  .sidebar-card {
+    position: static;
+    margin-bottom: 100px;
+  }
+  .sidebar-menu {
+    position: static;
+    display: none;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "card "
+      "main"
+      "sidebar-menu"
+      "footer";
+  }
+  .skills-wrapper {
+    grid-template-columns: repeat(2, 200px);
+    gap: 28px;
+  }
+}
