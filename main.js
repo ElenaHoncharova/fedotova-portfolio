@@ -1,6 +1,11 @@
 const form = document.querySelector("form");
+const fullName = document.getElementById("name");
+const email = document.getElementById("email");
+const mess = document.getElementById("message");
 
 function sendEmail() {
+  const bodyMessage = `Name: ${fullName.value}<br> Email: ${email.value}<br> Message: ${mess.value}`;
+
   Email.send({
     Host: "smtp.elasticemail.com",
     Username: "selena.honcharova@gmail.com",
@@ -8,7 +13,7 @@ function sendEmail() {
     To: "selena.honcharova@gmail.com",
     From: "selena.honcharova@gmail.com",
     Subject: "New message!",
-    Body: "And this is the body",
+    Body: bodyMessage,
   }).then((message) => alert(message));
 }
 
