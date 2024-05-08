@@ -414,6 +414,8 @@ main {
 
 .sidebar-menu-wrapper {
   grid-area: sidebar-menu;
+  position: relative;
+  z-index: -1;
 }
 .sidebar-menu {
   width: 60px;
