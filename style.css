@@ -347,9 +347,10 @@ body {
   display: flex;
   flex-direction: column;
   right: 0;
+  top: -30px;
   transition: transform 0.5s ease-in-out;
   text-align: center;
-  position: fixed;
+  position: absolute;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
