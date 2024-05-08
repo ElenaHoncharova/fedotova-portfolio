@@ -331,6 +331,12 @@ body {
   transform: translateX(25vw);
 }
 
+.sidebar-menu a:hover {
+  font-weight: bolder;
+  stroke: #d55327;
+  color: #d55327;
+}
+
 .primary-navigation .menu-items li {
   margin-bottom: 1.2rem;
   font-size: 1.5rem;
@@ -415,8 +421,6 @@ main {
 
 .sidebar-menu-wrapper {
   grid-area: sidebar-menu;
-  position: relative;
-  z-index: -1;
 }
 .sidebar-menu {
   width: 60px;
@@ -424,6 +428,7 @@ main {
   border-radius: 60px;
   position: fixed;
 }
+
 .sidebar-menu li {
   margin: 32px 20px;
 }
@@ -524,7 +529,14 @@ textarea {
   height: 60px;
   border-radius: 50px;
   justify-self: center;
+  background: #efe9e9;
+  padding: 18px 80px;
 }
+
+a.button {
+  text-decoration: none;
+}
+
 @media (max-width: 50em) {
   .sidebar-card {
     position: static;
@@ -547,5 +559,9 @@ textarea {
   .skills-wrapper {
     grid-template-columns: repeat(2, 200px);
     gap: 28px;
+  }
+
+  .nav-container input[type="checkbox"]:checked ~ .menu-items {
+    width: 100vw;
   }
 }
