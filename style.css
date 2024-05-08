@@ -329,6 +329,7 @@ body {
 
 .primary-navigation .menu-items {
   transform: translateX(25vw);
+  display: none;
 }
 
 .sidebar-menu a:hover {
@@ -341,7 +342,6 @@ body {
   margin-bottom: 1.2rem;
   font-size: 1.5rem;
   font-weight: 500;
-  color: #fff;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
