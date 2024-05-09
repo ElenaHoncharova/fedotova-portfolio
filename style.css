@@ -332,10 +332,13 @@ body {
   display: none;
 }
 
-.sidebar-menu a:hover {
+.sidebar-menu svg:hover {
   font-weight: bolder;
   stroke: #d55327;
-  color: #d55327;
+}
+
+.sidebar-menu svg {
+  stroke: var(--clr-primary-100);
 }
 
 .primary-navigation .menu-items li {
@@ -410,6 +413,15 @@ header {
 .sidebar-card li {
   display: inline-block;
 }
+
+.sidebar-card svg:hover {
+  fill: var(--clr-accent);
+}
+
+.sidebar-card svg {
+  fill: var(--clr-primary-100);
+}
+
 .card-photo {
   display: block;
   margin: 0 auto;
@@ -424,7 +436,6 @@ main {
 }
 .sidebar-menu {
   width: 60px;
-  height: 344px;
   border-radius: 60px;
   position: fixed;
 }
@@ -529,8 +540,9 @@ textarea {
   height: 60px;
   border-radius: 50px;
   justify-self: center;
-  background: #efe9e9;
+  background: var(--clr-primary-100);
   padding: 18px 80px;
+  color: var(--clr-dark-background);
 }
 
 a.button {
