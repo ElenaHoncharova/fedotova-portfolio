@@ -413,6 +413,7 @@ header {
 }
 .sidebar-card li {
   display: inline-block;
+  margin-inline: 10px;
 }
 
 .sidebar-card svg:hover {
