@@ -226,7 +226,7 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-section-text);
   background-color: var(--clr-dark-background);
-  margin: 30px;
+  margin: 30px 3%;
   font-weight: 700;
 }
 .icon-menu {
@@ -438,7 +438,7 @@ footer {
 .wrapper {
   display: grid;
   grid-template-columns: 400px 1fr 60px;
-  column-gap: 30px;
+  column-gap: 9%;
   grid-template-areas:
     "header header header"
     "card main sidebar-menu"
